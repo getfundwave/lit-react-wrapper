@@ -1,0 +1,22 @@
+{
+  "name": "lit-react-wrapper",
+  "version": "0.0.2",
+  "description": "Use react or material-ui components in your lit-element web component.",
+  "main": "lit-react-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fundwave Authors",
+  "license": "ISC",
+  "dependencies": {
+    "jss": "^10.5.0",
+    "@material-ui/styles": "^4.11.3",
+    "@material-ui/core": "^4.11.2",
+    "react-shadow-dom-retarget-events": "^1.0.11"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "lit-element": "~2.3.1"
+  }
+}
