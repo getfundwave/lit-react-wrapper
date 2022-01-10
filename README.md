@@ -1,4 +1,4 @@
-### Lit React Wrapper 0.0.2
+### Lit React Wrapper 1.0.0
 
 Use React or Material-UI components in your lit-element web component.
 

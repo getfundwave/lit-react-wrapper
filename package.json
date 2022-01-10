@@ -1,6 +1,6 @@
 {
   "name": "lit-react-wrapper",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Use react or material-ui components in your lit-element web component.",
   "main": "lit-react-wrapper.js",
   "scripts": {
@@ -17,6 +17,6 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "lit-element": "~2.3.1"
+    "lit": "^2.1.1"
   }
 }

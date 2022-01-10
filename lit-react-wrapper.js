@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
 import * as retargetEvents from 'react-shadow-dom-retarget-events';
