@@ -4,7 +4,7 @@ import * as React from 'react';
 import * as retargetEvents from 'react-shadow-dom-retarget-events';
 import { StylesProvider, jssPreset } from '@material-ui/styles';
 import { create } from 'jss';
-
+// import * as extractCSS from "component-css-extractor";
 
 class LitReactWrapper extends LitElement {
   
@@ -12,7 +12,8 @@ class LitReactWrapper extends LitElement {
     return {
       mountPoint: Object,
       props: Object,
-      element: Object
+      element: Object,
+      styles: Array
     }
   }
   
@@ -28,7 +29,10 @@ class LitReactWrapper extends LitElement {
   }
 
   createElement() {
+    console.log(this.element)
+    console.log(React.createRef(this.element))
     this.reactElement = React.createElement(this.element, this.props, React.createElement('slot'));
+    console.log(this.reactElement)
     return this.reactElement;
   }
   
@@ -48,11 +52,17 @@ class LitReactWrapper extends LitElement {
   firstUpdated() {
     this.mountPoint = this.shadowRoot.getElementById('mountPoint');
     this.renderElement();
+    console.log(this.shadowRoot)
+    for(var o in document.getElementsByTagName("style")){
+      this.shadowRoot.appendChild(document.getElementsByTagName("style")[o])
+    }
+    console.log(this.shadowRoot.getElementById('mountPoint').firstChild)
     retargetEvents(this.shadowRoot);
   }
 
   updated(changedProperties){
     if(changedProperties)
+    console.log(document.getElementsByTagName("style"))
       this.renderElement();
   }
 
