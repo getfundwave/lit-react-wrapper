@@ -2,6 +2,10 @@
 
 Use React or Material-UI components in your lit-element web component.
 
+### Pre-requisite: 
+ 
+install node module "husky" using ``` npm i ```
+
 ### Install
 
 ```
