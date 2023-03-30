@@ -4,7 +4,9 @@
   "description": "Use react or material-ui components in your lit-element web component.",
   "main": "lit-react-wrapper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "prepare": "husky install"
+
   },
   "author": "Fundwave Authors",
   "license": "ISC",
@@ -18,5 +20,9 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "lit": "^2.1.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
+
 }
