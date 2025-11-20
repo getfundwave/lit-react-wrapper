@@ -6,7 +6,7 @@ import { StylesProvider, jssPreset } from '@material-ui/styles';
 import { create } from 'jss';
 
 
-class LitReactWrapper extends LitElement {
+export class LitReactWrapper extends LitElement {
   
   static get properties(){
     return {
